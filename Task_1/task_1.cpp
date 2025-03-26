@@ -3,6 +3,7 @@
 using namespace std;
 
 bool string_check(string S, string T){
+    
     if(S.length() != T.length()){
         return false;
     }

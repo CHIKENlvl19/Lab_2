@@ -17,7 +17,7 @@ fn main() {
     println!("Введите строку S:"); // Считываем первую строку S
     let s = match lines.next() {
         Some(Ok(line)) => line,
-        _   {
+        _ => {
             println!("Ошибка при вводе строки S.");
             return;
         }
