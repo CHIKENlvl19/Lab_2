@@ -44,12 +44,11 @@ int reverseNumber(int number){
 
 int main(){
 
-    cout << "Введите числа, которые хотите проверить через пробел (0 для окончания): ";
+    cout << "Введите числа, которые хотите проверить через пробел (CTRL + D для окончания): ";
     vector<int> numbers;
 
     int number;
-    while(number != 0){        
-        cin >> number;
+    while(cin >> number){        
         if (number == 0) break;
         numbers.push_back(number);
     }
