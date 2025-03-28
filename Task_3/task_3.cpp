@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> // для reverse
+#include <algorithm> // заголовочный файл для reverse
 
 using namespace std;
 
-bool isNumberIncreasing(int number){
+bool isNumberIncreasing(int number){ // функция для проверки числа на возрастание цифр
     if(number / 10 < 1){
         return false;
     } 
@@ -26,7 +26,7 @@ bool isNumberIncreasing(int number){
     return true;
 }
 
-int reverseNumber(int number){
+int reverseNumber(int number){ // функция для переворачивания числа
     vector<int> digits;
 
     while(number > 0){
@@ -47,14 +47,14 @@ int main(){
     cout << "Введите числа, которые хотите проверить через пробел (CTRL + D для окончания): ";
     vector<int> numbers;
 
-    int number;
-    while(cin >> number){        
+    int number; 
+    while(cin >> number){ // ввод чисел, пока не будет введен EOF (CTRL + D)       
         if (number == 0) break;
         numbers.push_back(number);
     }
 
     cout << endl;
-    for(int n : numbers){
+    for(int n : numbers){ // проверка чисел и вывод
         if(isNumberIncreasing(n)){
             cout << reverseNumber(n) << " ";
         }
