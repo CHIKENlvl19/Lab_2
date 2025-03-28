@@ -54,10 +54,16 @@ int main(){
     }
 
     cout << endl;
+    short countSuccess = 0;
     for(int n : numbers){ // проверка чисел и вывод
         if(isNumberIncreasing(n)){
             cout << reverseNumber(n) << " ";
+            countSuccess++;
         }
+    }
+
+    if(countSuccess == 0){
+        cout << "Искомых чисел не найдено!" << endl;
     }
 
     return 0;
