@@ -62,7 +62,7 @@ int main(){
         }
     }
 
-    if(countSuccess == 0){
+    if(countSuccess == 0){ // проверка на успешный поиск
         cout << "Искомых чисел не найдено!" << endl;
     }
 
