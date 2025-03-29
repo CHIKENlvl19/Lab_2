@@ -19,7 +19,7 @@ string findFinalDestination(vector< pair<string, string> > routes) {
 
     // Находим все начальные пункты (те, которые не являются конечными)
     unordered_set<string> starts;
-    for (pair<string, string> route : routes) { // Копируем пары вместо использования ссылок
+    for (pair<string, string> route : routes) { // Копируем пары
         string start = route.first;
         if (destinations.find(start) == destinations.end()) {
             starts.insert(start);
@@ -35,7 +35,7 @@ string findFinalDestination(vector< pair<string, string> > routes) {
     string finalDestination = "";
     int maxLength = 0;
 
-    for (string start : starts) { // Копируем строки вместо использования ссылок
+    for (string start : starts) { // Копируем строки 
         string current = start;
         int length = 1;
 
