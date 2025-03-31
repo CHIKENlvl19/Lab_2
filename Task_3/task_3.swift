@@ -35,7 +35,7 @@ func reverseNumber(_ number: Int) -> Int {
     return reversedNumber
 }
 
-print("Введите числа, которые хотите проверить через пробел (Ctrl+D для окончания):")
+print("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (Ctrl+D пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ):")
 var numbers = [Int]()
 while let line = readLine() {
     numbers += line.split(separator: " ").compactMap { Int($0) }
@@ -51,5 +51,5 @@ for n in numbers {
 }
 
 if countSuccess == 0 {
-    print("Искомых чисел не найдено!")
+    print("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!")
 }
